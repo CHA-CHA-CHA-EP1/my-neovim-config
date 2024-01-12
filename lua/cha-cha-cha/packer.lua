@@ -55,6 +55,9 @@ return require('packer').startup(function(use)
   use("github/copilot.vim")
   use("wakatime/vim-wakatime")
   use("Mofiqul/dracula.nvim")
+  use {"akinsho/toggleterm.nvim", tag = '*', config = function()
+    require("toggleterm").setup()
+  end}
   -- comment line below
   -- use("scrooloose/nerdtree")
 
