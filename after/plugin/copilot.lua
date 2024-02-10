@@ -7,5 +7,3 @@ vim.keymap.set('n', '<leader>cp', ':Copilot panel<cr>')
 vim.keymap.set('i', '<C-.>', '<Plug>(copilot-next)')
 vim.keymap.set('i', '<C-,>', '<Plug>(copilot-previous)')
 vim.keymap.set('i', '<C-s>', '<Plug>(copilot-suggest)')
-
-
