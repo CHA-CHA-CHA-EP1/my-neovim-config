@@ -17,7 +17,7 @@ return require('packer').startup(function(use)
 	  'rose-pine/neovim',
 	  as = 'rose-pine',
 	  config = function()
-		  vim.cmd('colorscheme rose-pine')
+		  -- vim.cmd('colorscheme rose-pine')
 	  end
   })
 
@@ -55,9 +55,25 @@ return require('packer').startup(function(use)
   use("github/copilot.vim")
   use("wakatime/vim-wakatime")
   use("Mofiqul/dracula.nvim")
+  use("olimorris/onedarkpro.nvim")
+  use("folke/tokyonight.nvim")
   use {"akinsho/toggleterm.nvim", tag = '*', config = function()
     require("toggleterm").setup()
   end}
+
+  use {'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons'}
+
+  use {
+      'nvim-lualine/lualine.nvim',
+      requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+    }
+
+  use "nvim-lua/plenary.nvim" -- don't forget to add this one if you don't have it yet!
+  use {
+      "ThePrimeagen/harpoon",
+      branch = "harpoon2",
+      requires = { {"nvim-lua/plenary.nvim"} }
+  }
   -- comment line below
   -- use("scrooloose/nerdtree")
 
