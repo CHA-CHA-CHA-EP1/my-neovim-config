@@ -30,7 +30,6 @@ vim.opt.isfname:append("@-@")
 vim.opt.updatetime = 50
 
 vim.opt.colorcolumn = "100"
-
 -- write setting colorschema default
 --
 -- implement leader C to clipboard system

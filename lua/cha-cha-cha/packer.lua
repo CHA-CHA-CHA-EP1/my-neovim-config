@@ -53,7 +53,6 @@ return require('packer').startup(function(use)
   }
   use("folke/zen-mode.nvim")
   use("github/copilot.vim")
-  use("wakatime/vim-wakatime")
   use("Mofiqul/dracula.nvim")
   use("olimorris/onedarkpro.nvim")
   use("folke/tokyonight.nvim")
@@ -74,6 +73,11 @@ return require('packer').startup(function(use)
       branch = "harpoon2",
       requires = { {"nvim-lua/plenary.nvim"} }
   }
+
+  use 'ray-x/go.nvim'
+  use 'ray-x/guihua.lua'
+
+  use 'leoluz/nvim-dap-go' -- Install the plugin with Packer
   -- comment line below
   -- use("scrooloose/nerdtree")
 
