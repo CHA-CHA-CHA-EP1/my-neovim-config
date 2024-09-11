@@ -6,7 +6,7 @@ if not status_ok then
 end
 
 toggleterm.setup({
- size = 20,
+ size = 16,
  open_mapping = [[<c-\>]],
  hide_numbers = true,
  shade_filetypes = {},
@@ -17,6 +17,7 @@ toggleterm.setup({
  persist_size = true,
  --direction = "float",
  direction = "horizontal",
+ -- direction = "vertical",
  close_on_exit = true,
  shell = vim.o.shell,
  float_opts = {

@@ -13,13 +13,7 @@ return require('packer').startup(function(use)
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }
 
-  use ({ 
-	  'rose-pine/neovim',
-	  as = 'rose-pine',
-	  config = function()
-		  -- vim.cmd('colorscheme rose-pine')
-	  end
-  })
+  use { "rose-pine/neovim", as = "rose-pine" }
 
   use {
 	'nvim-treesitter/nvim-treesitter',
@@ -76,6 +70,7 @@ return require('packer').startup(function(use)
 
   use 'ray-x/go.nvim'
   use 'ray-x/guihua.lua'
+  use 'wakatime/vim-wakatime'
 
   use 'leoluz/nvim-dap-go' -- Install the plugin with Packer
   -- comment line below

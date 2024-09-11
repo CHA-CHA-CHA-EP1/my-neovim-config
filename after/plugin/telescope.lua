@@ -1,5 +1,18 @@
 local builtin = require('telescope.builtin')
-vim.keymap.set('n', '<leader>f', builtin.find_files, {})
+local themes = require('telescope.themes')
+
+local telescope = themes.get_cursor({
+  prompt_title = 'Halo',
+  previewer = false,
+  layout_config = {
+    height = 0.5,
+    width = 0.7,
+  },
+})
+
+vim.keymap.set('n', '<leader>f', function() 
+  builtin.find_files(telescope);
+end, {})
 vim.keymap.set('n', '<leader>li', builtin.live_grep, {})
 vim.keymap.set('n', '<leader>lr', builtin.lsp_references, {})
 vim.keymap.set('n', '<C-p>', builtin.git_files, {})
