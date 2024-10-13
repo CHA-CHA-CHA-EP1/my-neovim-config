@@ -5,8 +5,9 @@ local dracula = require("dracula")
 dracula.setup({
   -- customize dracula color palette
   colors = {
-    bg = "#282A36",
+    -- bg = "#282A36",
     -- bg = "#000000",
+    bg = "#FFFFFF",
     fg = "#F8F8F2",
     selection = "#44475A",
     comment = "#6272A4",

@@ -75,5 +75,14 @@ return require('packer').startup(function(use)
   use 'leoluz/nvim-dap-go' -- Install the plugin with Packer
   -- comment line below
   -- use("scrooloose/nerdtree")
+  use 'lewis6991/gitsigns.nvim'
 
+
+  -- use 'preservim/nerdtree'
+  use 'nvim-tree/nvim-tree.lua'
+
+  -- Zig Lang
+  use 'ziglang/zig.vim'
+
+  use 'ellisonleao/carbon-now.nvim'
 end)
