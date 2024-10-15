@@ -39,6 +39,11 @@ lsp.set_preferences({
 
 lsp.on_attach(function(client, bufnr)
   local opts = {buffer = bufnr, remap = false}
+  -- Disable auto-format for Zig (zls)
+  if client.name == "zls" then
+    client.resolved_capabilities.document_formatting = false
+  end
+
   vim.keymap.set("n", "gr", function() vim.lsp.buf.references() end, vim.tbl_deep_extend("force", opts, { desc = "LSP Goto Reference" }))
   vim.keymap.set("n", "gD", function() vim.lsp.buf.type_definition() end, opts)
   vim.keymap.set("n", "gd", function() vim.lsp.buf.definition() end, opts)
@@ -68,6 +73,6 @@ vim.diagnostic.config({
 
 -- setting for zig lang
 -- don't show parse errors in a separate window
-vim.g.zig_fmt_parse_errors = 0
+-- vim.g.zig_fmt_parse_errors = 0
 -- disable format-on-save from `ziglang/zig.vim`
-vim.g.zig_fmt_autosave = 0
+-- vim.g.zig_fmt_autosave = 0

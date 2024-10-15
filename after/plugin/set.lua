@@ -1,8 +1,12 @@
 -- vim.cmd.colorscheme('onelight')
--- set background color to #FFFFFF
--- vim.cmd('hi Normal guibg=#FFFFFF')
+-- set background color to #FFFFF
+vim.cmd('hi Normal guibg=#000000')
 -- vim.cmd.colorscheme('rose-pine')
 -- vim.cmd.colorscheme('tokyonight')
+--
+-- :let g:zig_fmt_autosave = 0
+vim.g.zig_fmt_autosave = 0
+
 
 vim.opt.guicursor = ""
 

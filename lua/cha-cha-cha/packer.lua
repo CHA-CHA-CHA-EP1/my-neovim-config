@@ -81,8 +81,8 @@ return require('packer').startup(function(use)
   -- use 'preservim/nerdtree'
   use 'nvim-tree/nvim-tree.lua'
 
+  -- use 'ziglang/zig.vim'
   -- Zig Lang
-  use 'ziglang/zig.vim'
 
   use 'ellisonleao/carbon-now.nvim'
 end)
