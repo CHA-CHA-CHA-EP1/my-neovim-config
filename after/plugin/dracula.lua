@@ -1,5 +1,6 @@
 -- vim.cmd[[colorscheme vim]]
 vim.cmd[[colorscheme dracula]]
+-- vim.cmd[[colorscheme onelight]]
 
 local dracula = require("dracula")
 dracula.setup({

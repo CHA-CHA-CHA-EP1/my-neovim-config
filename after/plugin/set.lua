@@ -1,6 +1,6 @@
 -- vim.cmd.colorscheme('onelight')
 -- set background color to #FFFFF
-vim.cmd('hi Normal guibg=#000000')
+vim.cmd('hi Normal guibg=#000000') -- UNCOMMENT THIS FOR BACKGROUND COLOR
 -- vim.cmd.colorscheme('rose-pine')
 -- vim.cmd.colorscheme('tokyonight')
 --

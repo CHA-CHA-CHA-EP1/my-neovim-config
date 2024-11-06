@@ -64,6 +64,8 @@ lsp.on_attach(function(client, bufnr)
   vim.keymap.set("n", "<leader>w", function() vim.cmd('EslintFix') end, opts)
 end)
 
+-- Set up LSP
+
 lsp.setup()
 
 vim.diagnostic.config({
