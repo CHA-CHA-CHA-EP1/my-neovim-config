@@ -85,4 +85,13 @@ return require('packer').startup(function(use)
   -- Zig Lang
 
   use 'ellisonleao/carbon-now.nvim'
+
+  use {
+    "cuducos/yaml.nvim",
+    ft = { "yaml" }, -- optional
+    requires = {
+      "nvim-treesitter/nvim-treesitter",
+      "nvim-telescope/telescope.nvim" -- optional
+    },
+  }
 end)

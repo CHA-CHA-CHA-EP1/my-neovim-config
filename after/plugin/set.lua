@@ -11,7 +11,7 @@ vim.g.zig_fmt_autosave = 0
 vim.opt.guicursor = ""
 
 vim.opt.nu = true
-vim.opt.relativenumber = true
+-- vim.opt.relativenumber = true
 
 vim.opt.tabstop = 2
 vim.opt.softtabstop = 2
@@ -48,3 +48,6 @@ vim.opt.colorcolumn = "100"
 
 -- setting for neovide
 vim.g.neovide_cursor_vfx_mode = "pixiedust"
+
+
+vim.opt.relativenumber = false
