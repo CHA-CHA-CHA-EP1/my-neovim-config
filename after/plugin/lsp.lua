@@ -44,6 +44,7 @@ lsp.on_attach(function(client, bufnr)
     client.resolved_capabilities.document_formatting = false
   end
 
+  -- Disable auto-format for rust lang
   vim.keymap.set("n", "gr", function() vim.lsp.buf.references() end, vim.tbl_deep_extend("force", opts, { desc = "LSP Goto Reference" }))
   vim.keymap.set("n", "gD", function() vim.lsp.buf.type_definition() end, opts)
   vim.keymap.set("n", "gd", function() vim.lsp.buf.definition() end, opts)

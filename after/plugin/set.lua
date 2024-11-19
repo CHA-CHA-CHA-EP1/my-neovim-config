@@ -51,3 +51,9 @@ vim.g.neovide_cursor_vfx_mode = "pixiedust"
 
 
 vim.opt.relativenumber = false
+
+
+-- rust disable detect version
+-- vim.g.rustfmt_autosave = 0
+-- vim.g.rustfmt_version_check = 0
+vim.g.autoformat = false
